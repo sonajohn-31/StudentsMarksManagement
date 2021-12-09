@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style2 {
+            width: 99%;
+            height: 170px;
+        }
+        .auto-style3 {
+            margin-left: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+        <div style="border: 3px groove #CC0000; padding: 3px; background-color:antiquewhite; font-size: large;" class="auto-style2">
+            <asp:Image ID="Image1" runat="server" Height="120px" ImageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIogdOQITWopMeO7PVW4XkN52mH9y0p0IUQ&amp;usqp=CAU" Width="99%" CssClass="auto-style3" BorderColor="Blue" BorderWidth="3px" />
+            <br />
+            <br />
+                    <asp:HyperLink ID="hy1" runat="server" Text="Faculty Home" NavigateUrl="~/FacultyHome.aspx"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy2" runat="server" Text="Students Info" NavigateUrl="~/StdInfo.aspx"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy3" runat="server" Text="Add Marks" NavigateUrl="~/AddMarks.aspx"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy4" runat="server" Text="Show Mark Details" NavigateUrl="~/ShowMarkDetails.aspx"></asp:HyperLink>       
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy5" runat="server" Text="Change Password" NavigateUrl="~/ChangePassword.aspx"></asp:HyperLink>
+                      &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy6" runat="server" Text="Log out" NavigateUrl="~/LoginPage.aspx"></asp:HyperLink>&nbsp;&nbsp;&nbsp;
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            
+
+            </asp:ContentPlaceHolder>
+         </center>
+      </div>
+   
+    </form>
+</body>
+</html>

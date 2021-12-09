@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SMS2.master.cs" Inherits="StudentsMarksManagement.SMS2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style2 {
+            width: 99%;
+            height: 170px;
+        }
+        .auto-style3 {
+            margin-left: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+        <div style="border: 3px groove #CC0000; padding: 3px; background-color:antiquewhite; font-size: large;" class="auto-style2">
+            <asp:Image ID="Image1" runat="server" Height="120px" ImageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcIogdOQITWopMeO7PVW4XkN52mH9y0p0IUQ&amp;usqp=CAU" Width="99%" CssClass="auto-style3" BorderColor="Blue" BorderWidth="3px" />
+            <br />
+            <br />
+                    <asp:HyperLink ID="hy1" runat="server" Text="Student Home" NavigateUrl="~/StudentHome.aspx"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy2" runat="server" Text="Exam Marks" NavigateUrl="~/ExamMarks.aspx"></asp:HyperLink>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy3" runat="server" Text="Change Password" NavigateUrl="~/ChangePasswordStd.aspx"></asp:HyperLink>
+                      &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <asp:HyperLink ID="hy4" runat="server" Text="Log out" NavigateUrl="~/LoginPage.aspx"></asp:HyperLink>&nbsp;&nbsp;&nbsp;
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            
+
+            </asp:ContentPlaceHolder>
+         </center>
+      </div>
+   
+    </form>
+</body>
+</html>
